@@ -12,6 +12,15 @@ git clone https://github.com/armendgashi/automated-routine
 
 ### GETIP
 
+### Requirements
+
+```
+Make sure the following binaries are instelled on your system:
+
+grep (sudo apt-get install grep)
+xclip (sudo apt-get install xclip)
+```
+
 Shell script that prints out only the IP of your chosen Network Interface and copies it on your clipboard.
 
 ```
