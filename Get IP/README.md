@@ -1,6 +1,6 @@
 # GETIP
 
-Shell script that prints out only the IP of your chosen Network Interface
+Shell script that prints out only the IP of your chosen Network Interface and copies it on your clipboard.
 
 ## Usage
 
