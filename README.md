@@ -32,7 +32,7 @@ getip wlan0
 
 ### Base64 Encoding/Decoding
 
-Shell scripts useful for fast base64 encoding and decoding.
+Useful shell scripts for fast base64 encoding and decoding.
 
 ### Usage
 
