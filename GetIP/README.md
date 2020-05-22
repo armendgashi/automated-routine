@@ -2,6 +2,14 @@
 
 Shell script that prints out only the IP of your chosen Network Interface and copies it on your clipboard.
 
+## Requirements
+
+```
+Make sure the following binaries are instelled on your system:
+grep (sudo apt-get install grep)
+xclip (sudo apt-get install grep)
+```
+
 ## Usage
 
 ```
