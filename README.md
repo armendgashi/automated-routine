@@ -12,7 +12,7 @@ git clone https://github.com/armendgashi/automated-routine
 
 ### GETIP
 
-Shell script that prints out only the IP of your chosen Network Interface and copies it on your. clipboard
+Shell script that prints out only the IP of your chosen Network Interface and copies it on your clipboard.
 
 ```
 chmod a+x getip.sh
