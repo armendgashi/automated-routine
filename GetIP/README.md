@@ -6,8 +6,9 @@ Shell script that prints out only the IP of your chosen Network Interface and co
 
 ```
 Make sure the following binaries are instelled on your system:
+
 grep (sudo apt-get install grep)
-xclip (sudo apt-get install grep)
+xclip (sudo apt-get install xclip)
 ```
 
 ## Usage
