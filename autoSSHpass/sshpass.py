@@ -1,9 +1,19 @@
 #!/usr/bin/python3
-
 from optparse import OptionParser
 import sys
 import os
 from colorama import Fore, Back, Style
+
+banner = """
+╦╔═╔═╗
+╠╩╗╚═╗
+╩ ╩╚═╝ <3
+
+Author: Armend Gashi
+https://github.com/armendgashi
+"""
+
+print (banner)
 
 def optParser():
     parser = OptionParser()
