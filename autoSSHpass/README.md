@@ -5,20 +5,22 @@ Automate the noninteractive ssh password provider sshpass.
 ## Requirements
 
 ```
-sudo apt-get install sshpass
-pip3 install colorama
+$ sudo apt-get install sshpass
+$ pip3 install colorama
 ```
 
 ## Usage
 
 ```
-chmod a+x sshpass.py
-./sshpass.py username password ip
+$ chmod a+x sshpass.py
+$ ./sshpass.py username password ip
+```
 
-OR copy this script as a binary
-cp sshpass.py /usr/bin/autosshpass
+Or copy this script as a binary.
 
-autosshpass username password ip
+```
+$ cp sshpass.py /usr/bin/autosshpass
+$ autosshpass username password ip
 ```
 
 
