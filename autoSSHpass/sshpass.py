@@ -9,7 +9,7 @@ banner = """
 ╠╩╗╚═╗
 ╩ ╩╚═╝ <3
 Author: Armend Gashi
-https://github.com/armendgashi
+https://github.com/armendgashx
 """
 
 print (banner)
