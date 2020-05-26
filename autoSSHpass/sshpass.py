@@ -1,14 +1,13 @@
 #!/usr/bin/python3
 from optparse import OptionParser
-import sys
-import os
+import sys, socket, os
 from colorama import Fore, Back, Style
 
+socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 banner = """
 ╦╔═╔═╗
 ╠╩╗╚═╗
 ╩ ╩╚═╝ <3
-
 Author: Armend Gashi
 https://github.com/armendgashi
 """
@@ -30,12 +29,18 @@ def optParser():
 
 def main():
     options = optParser()
-    while True:
-        command = (input('[{}{}@{}{}]$ '.format(Fore.GREEN,options.username,options.ip,Fore.WHITE)))
-        if command == "exit":
-            break
-        else:
-            os.system("sshpass -p {} ssh {}@{} {}".format(options.password, options.username, options.ip, command))
+    try:
+        socket.connect((options.ip, 22))
+        answer = str(socket.recv(1024))
+        if "SSH" in answer:
+            while True:
+                command = (input('[{}{}@{}{}]$ '.format(Fore.GREEN,options.username,options.ip,Fore.WHITE)))
+                if command == "exit":
+                    break
+                else:
+                    os.system("sshpass -p {} ssh {}@{} {}".format(options.password, options.username, options.ip, command))
+    except:
+        print ("Could not connect to SSH on: {}".format(options.ip))
 
 if __name__ == "__main__":
     main()
