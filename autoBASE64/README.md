@@ -5,24 +5,26 @@ Useful shell scripts for fast base64 encoding and decoding.
 ## Usage
 
 ```
-chmod a+x base64_encode.sh
-chmod a+x base64_decode.sh
+$ chmod a+x base64_encode.sh
+$ chmod a+x base64_decode.sh
 
-./base64_encode Text to encode
-./base64_decode Text to decode
+$ ./base64_encode Text to encode
+$ ./base64_decode Text to decode
 ```
 
 ## Examples
 
 ```
-./base64_encode testing
-./base64_decode dGVzdGluZwo=
+$ ./base64_encode testing
+$ ./base64_decode dGVzdGluZwo=
+```
 
-OR you can use them as a binary
+Or you can use them as a binary.
 
-cp base64_encode /usr/bin/b64enc
-cp base64_decode /usr/bin/b64dec
+```
+$ cp base64_encode /usr/bin/b64enc
+$ cp base64_decode /usr/bin/b64dec
 
-b64enc test
-b64dec dGVzdGluZwo=
+$ b64enc test
+$ b64dec dGVzdGluZwo=
 ```
