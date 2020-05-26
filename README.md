@@ -79,7 +79,7 @@ Automate the noninteractive ssh password provider sshpass.
 ### Requirements
 
 ```
-sudo apt-get install sshpass
+$ sudo apt-get install sshpass
 $ pip3 install colorama
 ```
 
