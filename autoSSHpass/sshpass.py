@@ -1,17 +1,32 @@
 #!/usr/bin/python3
 
+from optparse import OptionParser
 import sys
 import os
 from colorama import Fore, Back, Style
 
-username = sys.argv[1]
-password = sys.argv[2]
-ip = sys.argv[3]
+def optParser():
+    parser = OptionParser()
+    parser.add_option("-u", "--username", dest="username", help="Target's Username")
+    parser.add_option("-i", "--ip", dest="ip", help="Target's IP")
+    parser.add_option("-p", "--password", dest="password", help="Target's Password")
 
-while True:
-    banner = '╭─[{}{}@{}{}]\n'.format(Fore.GREEN,username,ip,Fore.WHITE)
-    shell = input('{}╰─>'.format(banner))
-    if shell == "exit":
-        break
+    (options, args) = parser.parse_args()
+
+    if not options.username or not options.ip or not options.password:
+        print (parser.error("python3 sshpass.py --help"))
     else:
-        os.system("sshpass -p {} ssh {}@{} {}".format(password, username, ip, shell))
+        return options
+
+def main():
+    options = optParser()
+    while True:
+        command = (input('[{}{}@{}{}]$ '.format(Fore.GREEN,options.username,options.ip,Fore.WHITE)))
+        # shell = input('{}╰─>'.format(banner))
+        if command == "exit":
+            break
+        else:
+            os.system("sshpass -p {} ssh {}@{} {}".format(options.password, options.username, options.ip, command))
+
+if __name__ == "__main__":
+    main()
