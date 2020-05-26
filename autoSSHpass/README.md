@@ -5,7 +5,7 @@ Automate the noninteractive ssh password provider sshpass.
 ## Requirements
 
 ```
-pip install colorama
+pip3 install colorama
 ```
 
 ## Usage
