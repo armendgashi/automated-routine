@@ -10,7 +10,7 @@ git clone https://github.com/armendgashi/automated-routine
 
 ## Usage
 
-### GETIP
+# GETIP
 
 ### Requirements
 
@@ -39,7 +39,7 @@ cp getip.sh /usr/bin/getip
 getip wlan0
 ```
 
-### Base64 Encoding/Decoding
+# Base64 Encoding/Decoding
 
 Useful shell scripts for fast base64 encoding and decoding.
 
