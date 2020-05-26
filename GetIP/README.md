@@ -1,30 +1,30 @@
 # GETIP
 
-Shell script that prints out only the IP of your chosen Network Interface and copies it on your clipboard.
-
 ## Requirements
 
-```
-Make sure the following binaries are instelled on your system:
-
-grep (sudo apt-get install grep)
-xclip (sudo apt-get install xclip)
-```
-
-## Usage
+Make sure grep and xclip are instelled on your system:
 
 ```
-chmod a+x getip.sh
-./getip.sh interface
+$ sudo apt-get install grep
+$ sudo apt-get install xclip
+```
+
+Shell script that prints out only the IP of your chosen Network Interface and copies it on your clipboard.
+
+```
+$ chmod a+x getip.sh
+$ ./getip.sh interface
 ```
 
 ## Example
 
 ```
-./getip.sh wlan0
+$ ./getip.sh wlan0
+```
 
-OR you can use it as a binary
+Or you can use it as a binary.
 
-cp getip.sh /usr/bin/getip
-getip wlan0
+```
+$ cp getip.sh /usr/bin/getip
+$ getip wlan0
 ```
