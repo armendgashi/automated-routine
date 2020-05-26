@@ -89,3 +89,6 @@ cp sshpass.py /usr/bin/autosshpass
 
 autosshpass username password ip
 ```
+
+
+![gif](https://user-images.githubusercontent.com/62258986/82859731-d122bb80-9f17-11ea-9948-6fd6c7ed9bf8.gif)
