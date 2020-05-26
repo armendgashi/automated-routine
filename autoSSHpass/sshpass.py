@@ -22,7 +22,6 @@ def main():
     options = optParser()
     while True:
         command = (input('[{}{}@{}{}]$ '.format(Fore.GREEN,options.username,options.ip,Fore.WHITE)))
-        # shell = input('{}╰─>'.format(banner))
         if command == "exit":
             break
         else:
